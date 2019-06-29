@@ -2,6 +2,9 @@
     <wb-module deploy-name="BioDevApp">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Servlets"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/Beans"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/DAO"/>
         <property name="context-root" value="BioDevApp"/>
         <property name="java-output-path" value="/BioDevApp/build/classes"/>
     </wb-module>
