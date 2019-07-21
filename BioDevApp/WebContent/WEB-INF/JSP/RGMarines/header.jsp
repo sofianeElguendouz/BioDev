@@ -1,7 +1,7 @@
 <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
-<link type="text/css" rel="stylesheet" href="Styles/header.css" />
+<link type="text/css" rel="stylesheet" href="Styles/RGMarines/header.css" />
 
-<a href="#"><img src="img/logo.png" alt="logo" style="width:80px;height:80px; float:left; padding:0px 0px;"></a>
+<a href="#"><img src="images/RGMarines/logo.png" alt="logo" style="width:80px;height:80px; float:left; padding:0px 0px;"></a>
 
 <header class="header-login-signup">
 
