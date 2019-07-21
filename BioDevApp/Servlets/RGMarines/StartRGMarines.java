@@ -18,7 +18,7 @@ public class StartRGMarines extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			
-			this.getServletContext().getRequestDispatcher("/WEB-INF/JSP/RGMarines/test.jsp").forward(request, response);
+			this.getServletContext().getRequestDispatcher("/WEB-INF/JSP/RGMarines/homeMarine.jsp").forward(request, response);
 		}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
