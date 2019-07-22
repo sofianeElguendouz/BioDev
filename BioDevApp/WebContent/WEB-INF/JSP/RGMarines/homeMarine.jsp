@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Page d'acceuil de la partie RG Marines</title>
+	<title>RG Marines</title>
 	
 	
 	
