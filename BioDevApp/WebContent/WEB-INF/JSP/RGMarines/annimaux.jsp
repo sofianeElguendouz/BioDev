@@ -6,11 +6,11 @@
 </head>
 <body>
  	<%@include file="header.jsp"  %>
- 	<h2 style="text-align:center; color:#8F8F8F">Ressources génétiques marines-Faunestique</h2><br><br>
- 	<img alt="faune" src="images/RGMarines/faune.png" style="border-radius:10%;width:320px;height:320px; float:left;display: table;margin: 0 auto;min-height: 100%">
+ 	<h2 style="text-align:center; color:#8F8F8F">Ressources genetiques marines _ FAUNE</h2><br><br>
+ 	<div class="text-center"><img alt="faune" src="images/RGMarines/faune.jpg" class="img-thumbnail"></div>
  	<div style="text-align:center;">
- 		<h4  style="color:#8F8F8F">RECONNAÎTRE LES ANIMAUX MARINS … pas si simple !</h4> <br>
- 		<p >
+ 		<h1  style="color:#8F8F8F">RECONNAITRE LES ANIMAUX MARINS ... pas si simple !</h1> <br>
+ 		<p style = "font-size:150%">
  			
  			Ranger les êtres vivants n’est pas une mince affaire. Aujourd’hui encore, <br>
  			certains animaux font débats dans le milieu scientifique,  ce qui a pour effet des modifications <br>
@@ -20,8 +20,13 @@
 			Des galeries d’images présentant les espèces vous aideront à y voir plus clair ! <br>
  		</p>
  	</div>
- 	<h2>ACTUELLEMENT, 344 ESPÈCES ANIMALES DE MÉDITERRANÉE  DANS LA PHOTOTHÈQUE !</h2>
- 	<br><br><br><br><br><br><br><br><br><br>
+ 	
+ 	<br><br><br><br>
+ 	<h3 style ="text-align: center;">ACTUELLEMENT, 344 ESPECES ANIMALES DE MEDITERRANEE  DANS LA PHOTOTHEQUE !</h3><br><br>
+ 	<div class="text-right">
+ 		<button type="button" class="btn" style="color: white; background-color: #208247;">Embranchements</button>
+ 	</div>
+ 	<br><br><br><br>
  	<%@include file="footer.jsp" %>
 </body>
 </html>
