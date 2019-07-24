@@ -26,7 +26,7 @@
  	<br><br><br><br>
  	<h3 style ="text-align: center;">ACTUELLEMENT, 344 ESPÈCES ANIMALES DE MÉDITERRANÉE  DANS LA PHOTOTHÈQUE !</h3><br><br>
  	<div class="text-center">
- 		<button type="button" class="btn" style="color: white; background-color: #208247;">Embranchements</button>
+ 		<button onclick="location.href = 'Annimaux_1';" type="button" class="btn" style="color: white; background-color: #208247;">Embranchements</button>
  	</div>
  	<br><br><br><br>
  	<%@include file="footer.jsp" %>
