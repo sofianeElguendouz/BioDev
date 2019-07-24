@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,10 +8,10 @@
 </head>
 <body>
  	<%@include file="header.jsp"  %>
- 	<h2 style="text-align:center; color:#8F8F8F">Ressources genetiques marines _ FAUNE</h2><br><br>
+ 	<h2 style="text-align:center; color:#8F8F8F">Ressources génétiques marines _ FAUNE</h2><br><br>
  	<div class="text-center"><img alt="faune" src="images/RGMarines/faune.jpg" class="img-thumbnail"></div>
  	<div style="text-align:center;">
- 		<h1  style="color:#8F8F8F">RECONNAITRE LES ANIMAUX MARINS ... pas si simple !</h1> <br>
+ 		<h1  style="color:#8F8F8F">RECONNAÎTRE LES ANIMAUX MARINS ... pas si simple !</h1> <br>
  		<p style = "font-size:150%">
  			
  			Ranger les êtres vivants n’est pas une mince affaire. Aujourd’hui encore, <br>
@@ -22,8 +24,8 @@
  	</div>
  	
  	<br><br><br><br>
- 	<h3 style ="text-align: center;">ACTUELLEMENT, 344 ESPECES ANIMALES DE MEDITERRANEE  DANS LA PHOTOTHEQUE !</h3><br><br>
- 	<div class="text-right">
+ 	<h3 style ="text-align: center;">ACTUELLEMENT, 344 ESPÈCES ANIMALES DE MÉDITERRANÉE  DANS LA PHOTOTHÈQUE !</h3><br><br>
+ 	<div class="text-center">
  		<button type="button" class="btn" style="color: white; background-color: #208247;">Embranchements</button>
  	</div>
  	<br><br><br><br>
