@@ -9,11 +9,10 @@
 <body>
 	<%@include file="header.jsp"  %>
  	<h2 style="text-align:center; color:#8F8F8F">Ressources génétiques marines-Végétaux</h2><br><br>
- 	<img alt="faune" src="images/RGMarines/faune.png" style="border-radius:10%;width:320px;height:320px; float:left;display: table;margin: 0 auto;min-height: 100%">
+ 	<div class="text-center"><img alt="faune" src="images/RGMarines/vegetaux.jpg" class="img-thumbnail"></div>
  	<div style="text-align:center;">
- 		<h4  style="color:#8F8F8F">RECONNAÎTRE LES VEGETAUX MARINS … pas si simple !</h4> <br>
- 		<p >
- 			
+ 		<h1  style="color:#8F8F8F">RECONNAÎTRE LES VEGETAUX MARINS ... pas si simple !</h1> <br>
+ 		<p style = "font-size:150%">
  			Les végétaux représentent le premier maillon de la chaîne alimentaire. <br>
 			Ce sont des producteurs primaires, c’est-à-dire qu’ils utilisent l’eau, les minéraux et l’énergie<br> 
 			du soleil pour en faire de la matière vivante par l’intermédiaire de la photosynthèse. <br>
@@ -21,8 +20,12 @@
 			consommateurs herbivores.<br>
  		</p>
  	</div>
- 	<h2>ACTUELLEMENT, 27 ESPECES VEGETALES DE MÉDITERRANÉE DANS LA PHOTOTHÈQUE !</h2>
- 	<br><br><br><br><br><br><br><br><br><br>
+ 	<br><br><br><br>
+ 	<h3 style ="text-align: center;">ACTUELLEMENT, 27 ESPECES VEGETALES DE MÉDITERRANÉE DANS LA PHOTOTHÈQUE !</h3><br><br>
+ 	<div class="text-right">
+ 		<button type="button" class="btn" style="color: white; background-color: #208247;">Embranchements</button>
+ 	</div>
+ 	<br><br><br><br>
  	<%@include file="footer.jsp" %>
 </body>
 </html>
