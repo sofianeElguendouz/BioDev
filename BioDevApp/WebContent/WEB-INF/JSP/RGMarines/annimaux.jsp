@@ -20,7 +20,7 @@
 			Des galeries d’images présentant les espèces vous aideront à y voir plus clair ! <br>
  		</p>
  	</div>
- 	
+ 	<h2>ACTUELLEMENT, 344 ESPÈCES ANIMALES DE MÉDITERRANÉE  DANS LA PHOTOTHÈQUE !</h2>
  	<br><br><br><br><br><br><br><br><br><br>
  	<%@include file="footer.jsp" %>
 </body>
