@@ -16,14 +16,14 @@ public class Embranchement extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String i = request.getParameter("bt");
+		String i = request.getParameter("embr");
 		System.out.println("l'embranchement est : "+i);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/JSP/RGMarines/embranchement.jsp").forward(request, response);
 
 	}
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String i = request.getParameter("bt");
+		String i = request.getParameter("embr");
 		System.out.println("l'embranchement est : "+i);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/JSP/RGMarines/embranchement.jsp").forward(request, response);
 	}
