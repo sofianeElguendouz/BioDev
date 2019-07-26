@@ -11,9 +11,13 @@
 <body>
 	<%@include file="header.jsp"  %>
 	<div class="container" style="color:#4D4F5C;">
-		<h2 style="text-align:center;">RG Marines --> Faune --> Poissons --> Poissons_Osseux</h2><br><br>
-		<h2 style="text-align:left">BLENNIE DE ROUX</h2>
-		<h5 style="text-align:left;">Parablennius rouxi | (Cocco, 1833) <br>N°168</h5>
+		<div>
+			<h2 style="text-align:center;">RG Marines --> Faune --> Poissons --> Poissons_Osseux</h2><br><br>
+			<img align="right" src="images/RGMarines/poa_sparus.jpg" class="img-thumbnail">
+			<h2 style="text-align:left">BLENNIE DE ROUX</h2>
+			<h5 style="text-align:left;">Parablennius rouxi | (Cocco, 1833) <br>N°168</h5>
+			
+		</div>
 		<div>
 			<table class="table">
 			  <thead>
@@ -59,6 +63,48 @@
 			      		La blennie de roux est un petit poisson de 8 cm de long au maximum, possédant une seule nageoire dorsale très longue et presque rectiligne. La nageoire anale a une longueur supérieure à la moitié du corps. Le corps et la tête sont allongés et fins. La livrée est typiquement beige clair avec une bande longitudinale sombre qui part du front jusqu’à la nageoire caudale. Au-dessus des yeux se trouvent des tentacules oculaires à 3 ou 4 branches, la première étant plus longue que les autres. Ces tentacules sont plus longs chez le mâle que chez la femelle, les mâles ayant par ailleurs une tache verte à bleu-noir à l’avant de la nageoire dorsale. De fines rayures bleues couvrent le museau.
 			      </td>
 			    </tr>
+			    
+			    <tr>
+			      <th scope="row">Connaissance traditionnelle associée</th>
+			      <td>
+			      		<button type="submit" class="btn" style="color: white; background-color: #208247;" data-toggle="modal" data-target="#CTAmodal">CONNAISSANCE TRADITIONNELLE ASSOCIEE</button>
+			      		<!-- Modal -->
+						<div class="modal fade" id="CTAmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        
+						        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        						<h4 class="modal-title">CTA à "Parablennius Rouxi"</h4>
+						      </div>
+						      <div class="modal-body">
+						      <img align="right" src="images/RGMarines/cta.jpg" class="img-thumbnail">
+						      <p>
+						        Ingrédients :<br>
+								- 1 Parablennius Rouxi<br>
+								- Sel<br>
+								- Lavande<br>
+								<br>
+								Préparation :<br>
+								Mettre la parablennius sous une température de 50° <br>
+								pendant 6 heures, après on rajoute du sel après <br>
+								refroidissement , la lavande est découpée en tout petits <br>
+								morceaux, mélangé ensuite avec la parablennius.<br>
+								<br>
+								Utilisation :<br>
+								Crème anti-rides <br>
+							  </p>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+						        <button type="button" class="btn btn-primary">Imprimer</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+			      		<img align="right" src="images/RGMarines/cta.png" style="height:20%; weight:20%;">
+			      </td>
+			    </tr>
 			    <tr>
 			      <th scope="row">ALIMENTATION</th>
 			      <td>
@@ -77,9 +123,9 @@
 			    <tr>
 			      <th scope="row">LOCALISATION</th>
 			      <td>
-			      		Nombre approximatif dans l'Algerie : 12 millions
-			      		Profondeur : -100m
-			      		Sur carte : 
+			      		Nombre approximatif dans l'Algerie : 12 millions<br>
+			      		Profondeur : -100m<br>
+			      		Sur carte : <br><br>
 			      </td>
 			    </tr>
 			  </tbody>
@@ -102,7 +148,7 @@
         });
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpM3RtFJb4RI_cAmVwn-oNrcrkRAB5yqA&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-XZsXgGTjAOhfoionM0nR15p0qDvBT54&callback=initMap" async defer></script>
 	
 	
 	
