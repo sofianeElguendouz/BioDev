@@ -125,7 +125,7 @@
 			      <td>
 			      		Nombre approximatif dans l'Algerie : 12 millions<br>
 			      		Profondeur : -100m<br>
-			      		Sur carte : <br><br>
+			      		Carte : <br><br>
 			      </td>
 			    </tr>
 			  </tbody>
