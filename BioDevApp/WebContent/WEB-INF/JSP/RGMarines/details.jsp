@@ -123,7 +123,7 @@
 			    <tr>
 			      <th scope="row">LOCALISATION</th>
 			      <td>
-			      		Nombre approximatif dans l'Algerie : 12 millions<br>
+			      		Nombre approximatif en l'Algerie : 12 millions<br>
 			      		Profondeur : -100m<br>
 			      		Carte : <br><br>
 			      </td>
