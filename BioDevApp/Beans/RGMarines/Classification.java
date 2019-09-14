@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Entity(name ="rgClassificationMarine")
 @Table(name="\"RG\".\"rgClassificationMarine\"")
 
-@NamedQuery(name="Classification.find", query="SELECT u FROM rgClassificationMarine u WHERE  u.num_niveau = :num_niveau")
+@NamedQuery(name="Classification.find", query="SELECT u FROM rgClassificationMarine u WHERE  u.num_niveau = :num_niveau AND u.parent_id = :parent_id")
 
 public class Classification implements Serializable{
 	
