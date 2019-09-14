@@ -26,16 +26,17 @@
 	<div style="display: table;margin: 0 auto; min-height: 100%;color:#8F8F8F">
 		<table>
 			<tr>
-				<td><img onclick="gotoNextPage(1);" alt="Animaux" src="images/RGMarines/animaux.jpg" style="border-radius:50%;width:160px;height:160px;"></td>
-				<td><img onclick="gotoNextPage(2);" alt="Végétaux" src="images/RGMarines/vegetaux.png" style="border-radius:50%;width:320px;height:320px;"></td>
-				<td><img onclick="gotoNextPage(3);" alt="Bactéries" src="images/RGMarines/bacteries.jpg" style="border-radius:50%;width:160px;height:160px;"></td>
-				<td><img onclick="gotoNextPage(4);" alt="Champignons" src="images/RGMarines/champignons.png" style="border-radius:50%;width:320px;height:320px;"></td>
+			  <c:forEach var="i" begin="1" end="${ sessionScope.listClassifications1.size() }" step="1">
+			  	<td><img onclick="gotoNextPage(${i});" alt="${sessionScope.listClassifications1.get(i-1).getNom()}" src="${sessionScope.listClassifications1.get(i-1).getImage()}" style="border-radius:50%;width:320px;height:320px;"></td>
+			  </c:forEach>
+				
+			  
 			</tr>
 			<tr style="text-align:center; font-size:30px">
-				<td>Animaux</td>
-				<td>Végétaux</td>
-				<td>Bactéries</td>
-				<td>Champignons</td>
+			  <c:forEach var="i" begin="1" end="${ sessionScope.listClassifications1.size() }" step="1">
+			  	<td>${sessionScope.listClassifications1.get(i-1).getNom()}</td>
+			  </c:forEach>
+				
 			</tr>
 		</table>
 	</div>
