@@ -40,6 +40,9 @@ public class Classification implements Serializable{
 	@Column
 	private String image;
 	
+	@Column
+	private String image1;
+	
 	/*-----------------------------------------*/
 	public Classification() {
 		
@@ -131,5 +134,14 @@ public class Classification implements Serializable{
 		this.image = image;
 	}
 	
+	
+	public String getImage1() {
+		return image1;
+	}
+
+
+	public void setImage1(String image1) {
+		this.image1 = image1;
+	}
 	
 }
