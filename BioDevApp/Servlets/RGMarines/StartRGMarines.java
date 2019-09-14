@@ -24,10 +24,11 @@ public class StartRGMarines extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		HttpSession session = request.getSession();
-
+		int parent_id1 = 0;
+		session.setAttribute("parent_id1", parent_id1);
 		List<Classification> listClassifications = new ArrayList<Classification>();
 		ClassificationDaoImpl classif =new ClassificationDaoImpl();
-		listClassifications = classif.listerClassifications(1);
+		listClassifications = classif.listerClassifications(1,parent_id1);
 		
 		session.setAttribute("listClassifications1", listClassifications);
 		System.out.println("nb : "+listClassifications.size());
