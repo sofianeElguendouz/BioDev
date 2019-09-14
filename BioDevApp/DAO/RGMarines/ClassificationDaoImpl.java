@@ -26,7 +26,7 @@ public class ClassificationDaoImpl {
 		//Query requete = em.createQuery("SELECT u FROM rgClassificationMarine u WHERE  u.num_niveau = :num_niveau");
 		requete.setParameter ("num_niveau",num_niveau);
 		classifications = requete.getResultList();
-		System.out.println(classifications.get(0).getNom());
+		//System.out.println(classifications.get(0).getNom());
 		if (classifications.isEmpty())return null; 
 		else  return classifications;
 	}
