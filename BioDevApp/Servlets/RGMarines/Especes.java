@@ -25,6 +25,7 @@ public class Especes extends HttpServlet {
 		
 		String numc = request.getParameter("numCATEG");
 		int indice3 = Integer.valueOf(numc)-1;
+		session.setAttribute("numCATEG", indice3);
 		
 		String idc = request.getParameter("idCATEG");
 		int idCATEG = Integer.valueOf(idc);
