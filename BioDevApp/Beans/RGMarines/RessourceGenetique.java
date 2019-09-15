@@ -6,10 +6,13 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity(name ="RessourceGenetique")
 @Table(name="\"RG\".\"RessourceGenetique\"")
+
+@NamedQuery(name="RessourceGenetique.find", query="SELECT u FROM RessourceGenetique u WHERE  u.id = :id_RessourceMarine")
 
 public class RessourceGenetique implements Serializable{
 	
@@ -17,7 +20,7 @@ public class RessourceGenetique implements Serializable{
 	
 	@Id
 	@GeneratedValue
-	@Column(name="ID")
+	@Column
 	private int id;
 	
 	@Column
@@ -30,13 +33,13 @@ public class RessourceGenetique implements Serializable{
 	private String nom_amazigh;
 	
 	@Column
-	private String nom_francais;
+	private String nom_français;
 	
 	@Column
 	private String description;
 	
 	@Column
-	private int nombre;
+	private Integer nombre;
 	
 	@Column
 	private String image;
@@ -45,13 +48,13 @@ public class RessourceGenetique implements Serializable{
 	private String categorie;
 	
 	@Column
-	private boolean validee;
+	private Boolean validee;
 	
 	@Column
 	private String utilisateur;
 	
 	@Column
-	private int id_cta;
+	private Integer id_cta;
 	
 	/*-------------------------------------------------*/
 	public RessourceGenetique() {
@@ -88,11 +91,11 @@ public class RessourceGenetique implements Serializable{
 	}
 
 	public String getNom_francais() {
-		return nom_francais;
+		return nom_français;
 	}
 
 	public void setNom_francais(String nom_francais) {
-		this.nom_francais = nom_francais;
+		this.nom_français = nom_francais;
 	}
 
 	public String getDescription() {
