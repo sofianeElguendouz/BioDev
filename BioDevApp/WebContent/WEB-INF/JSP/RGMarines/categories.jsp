@@ -12,20 +12,21 @@
 <body>
 
 	<%@include file="header.jsp"  %>
-	<h2 style="text-align:center; color:#8F8F8F">RG Marines --> Faune --> Poissons (Catégories)</h2><br><br>
+	<h2 style="text-align:center; color:#8F8F8F">RG Marines --> ${ sessionScope.nom1} --> ${ sessionScope.nom2} (Catégories)</h2><br><br>
 	
 	<div class="container">
 		<div class="row">
-			<c:forEach var="i" begin="0" end="6" step="2">
+			<c:forEach var="i" begin="1" end="${ sessionScope.listClassifications3.size() }" step="1">
 		    <div class="col-md-3">
 		      <div class="thumbnail text-center">
-		          <img src="images/RGMarines/poissons_osseux.jpg" alt="Lights" class="roundedImageShadow">
+		          <img src="${ sessionScope.listClassifications3.get(i-1).getImage()}" alt="Lights" class="roundedImageShadow">
 		          
 		          	<form method="GET" action="Especes">
 			          <div class="caption">
-			          	<input type="hidden" name="categ" value="${i}">
-			          	<h3>--<c:out value="${ i }" />--</h3>
-			            <p>29 espèces</p>
+			          	<input type="hidden" name="numCATEG" value="${i}">
+			          	<input type="hidden" name="idCATEG" value="${sessionScope.listClassifications3.get(i-1).getId()}">
+			          	<h3><c:out value="${ sessionScope.listClassifications3.get(i-1).getNom() }" /></h3>
+			            <p>${sessionScope.listClassifications3.get(i-1).getNb_especes()} espèces</p>
 			          </div>
 		          	<button type="submit" class="btn" style="color: white; background-color: #208247;">En savoir plus</button>
 		          	</form>
