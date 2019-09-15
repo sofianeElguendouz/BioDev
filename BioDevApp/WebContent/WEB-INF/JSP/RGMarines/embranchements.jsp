@@ -19,7 +19,7 @@
 			<c:forEach var="i" begin="1" end="${ sessionScope.listClassifications2.size() }" step="1">
 		    <div class="col-md-3">
 		      <div class="thumbnail text-center">
-		          <img src="${ sessionScope.listClassifications2.get(i-1).getImage()}" alt="Lights" style="width:60%">
+		          <img src="${ sessionScope.listClassifications2.get(i-1).getImage()}" alt="Lights" style="width:70%">
 		          
 		          	<form method="GET" action="Embranchement">
 			          <div class="caption">
