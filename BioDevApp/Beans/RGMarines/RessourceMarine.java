@@ -40,6 +40,27 @@ public class RessourceMarine implements Serializable{
 	@Column
 	private String image;
 	
+	@Column
+	private String image1;
+	
+	@Column
+	private String image_male;
+	
+	@Column
+	private String image_female;
+	
+	@Column
+	private String alimentation;
+	
+	@Column
+	private String reproduction;
+	
+	@Column
+	private String cle_identif;
+	
+	@Column
+	private String autres_noms;
+	
 	/*------------------------------------------*/
 	public RessourceMarine() {
 		
@@ -97,5 +118,62 @@ public class RessourceMarine implements Serializable{
 	public void setImage(String image) {
 		this.image = image;
 	}
+
+	public String getImage1() {
+		return image1;
+	}
+
+	public void setImage1(String image1) {
+		this.image1 = image1;
+	}
+
+	public String getImageMale() {
+		return image_male;
+	}
+
+	public void setImageMale(String imageMale) {
+		this.image_male = imageMale;
+	}
+
+	public String getImageFemale() {
+		return image_female;
+	}
+
+	public void setImageFemale(String imageFemale) {
+		this.image_female = imageFemale;
+	}
+
+	public String getAlimentation() {
+		return alimentation;
+	}
+
+	public void setAlimentation(String alimentation) {
+		this.alimentation = alimentation;
+	}
+
+	public String getReproduction() {
+		return reproduction;
+	}
+
+	public void setReproduction(String reproduction) {
+		this.reproduction = reproduction;
+	}
+
+	public String getCleIdentif() {
+		return cle_identif;
+	}
+
+	public void setCleIdentif(String cleIdentif) {
+		this.cle_identif = cleIdentif;
+	}
+
+	public String getAutres_noms() {
+		return autres_noms;
+	}
+
+	public void setAutres_noms(String autres_noms) {
+		this.autres_noms = autres_noms;
+	}
+	
 	
 }
