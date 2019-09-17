@@ -62,8 +62,24 @@ public class Details extends HttpServlet {
 		em = emdi.RecupererEM(idEM);
 		session.setAttribute("em", em);
 		System.out.println(em.getSalinite());
-
+		
+		/*-----------------------------Vérifie privillège et recupérer CTA ----------------------------*/
+		//boolean autorise = false;
+		/*if(autorise && ctaDemandee) {
+		}*/
+		CTA cta = new CTA();
+		CtaDaoImpl cdi = new CtaDaoImpl();
+		cta = cdi.recupCTA(rg.getId_cta());
+		session.setAttribute("cta", cta);
+		
 		this.getServletContext().getRequestDispatcher("/WEB-INF/JSP/RGMarines/details.jsp").forward(request, response);
 	}
+	
+	/*private CTA recupererCTA(int id_CTA) {
+		CTA cta = new CTA();
+		CtaDaoImpl cdi = new CtaDaoImpl();
+		cta = cdi.recupCTA(id_CTA);
+		return cta;
+	}*/
 
 }
