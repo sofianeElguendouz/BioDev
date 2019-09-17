@@ -75,21 +75,16 @@
         						<h4 class="modal-title">CTA à "${sessionScope.rg.getNom_latin()} / ${sessionScope.rg.getNom_francais()} / ${sessionScope.rg.getNom_arabe()}"</h4>
 						      </div>
 						      <div class="modal-body">
-						      <img align="right" src="images/RGMarines/cta.jpg" class="img-thumbnail">
+						      <img align="right" src="${sessionScope.cta.getImage()}" class="img-thumbnail">
 						      <p>
 						        Ingrédients :<br>
-								- 1 Parablennius Rouxi<br>
-								- Sel<br>
-								- Lavande<br>
+								${sessionScope.cta.getIngredients()}
 								<br>
 								Préparation :<br>
-								Mettre la parablennius sous une température de 50° <br>
-								pendant 6 heures, après on rajoute du sel après <br>
-								refroidissement , la lavande est découpée en tout petits <br>
-								morceaux, mélangé ensuite avec la parablennius.<br>
+								${sessionScope.cta.getPreparation()}
 								<br>
 								Utilisation :<br>
-								Crème anti-rides <br>
+								${sessionScope.cta.getDescription()} <br>
 							  </p>
 						      </div>
 						      <div class="modal-footer">
