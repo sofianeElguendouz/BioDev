@@ -25,9 +25,12 @@
 		</c:if>
 		
 		<c:if test="${ !empty sessionScope.prenomNom }">
+		<div style="float:right;">
         	<ul>
+        		<li><a href="deconnexion">Déconnexion</a></li>
 				<li>${sessionScope.prenomNom}</li>
 			</ul>
+		</div>
     	</c:if>
 	</div>
     
