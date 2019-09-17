@@ -23,7 +23,7 @@ public class RessourceMarine implements Serializable{
 	private Integer id;
 	
 	@Column
-	private int id_classification_marine;
+	private Integer id_classification_marine;
 	
 	@Column(nullable = true)
 	private Integer id_localisation_marine;
