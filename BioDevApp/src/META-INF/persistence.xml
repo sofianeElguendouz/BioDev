@@ -16,6 +16,8 @@
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/RGTech" />
             <property name="javax.persistence.jdbc.user" value="RGUser" />
             <property name="javax.persistence.jdbc.password" value="root00" />
+            <property name="javax.persistence.jdbc.superuser" value="RGAdmin" />
+            <property name="javax.persistence.jdbc.superpassword" value="root00" />
         </properties>
 	</persistence-unit>
 </persistence>
