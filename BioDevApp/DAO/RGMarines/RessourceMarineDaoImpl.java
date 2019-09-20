@@ -22,7 +22,23 @@ public class RessourceMarineDaoImpl {
 		listRM = requete.getResultList();
 		if (listRM.isEmpty())return null; 
 		else  return listRM;
-		
 	}
+	
+	public List<RessourceMarine> listerRMProposes(){
+		List<RessourceMarine> listRM = new ArrayList<RessourceMarine>();
+		Query requete = em.createNamedQuery("RMProposes.find", RessourceMarine.class);
+		listRM = requete.getResultList();
+		if (listRM.isEmpty())return null; 
+		else  return listRM;
+	}
+	
+	public void validerRGMP(RessourceMarine rm) {
+		System.out.println("je v valider la ressource");
+		em.getTransaction().begin();
+		em.merge(rm);
+		em.getTransaction().commit();
+
+	}
+	
 	
 }
