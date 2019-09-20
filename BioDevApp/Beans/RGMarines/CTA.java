@@ -13,6 +13,7 @@ import javax.persistence.Table;
 @Table(name="\"RG\".\"CTA\"")
 
 @NamedQuery(name="CTA.find", query="SELECT u FROM CTA u WHERE  u.id = :id_CTA")
+@NamedQuery(name="CTAProposes.find", query="SELECT u FROM CTA u WHERE  u.validee = false")
 
 public class CTA implements Serializable{
 private static final long serialVersionUID = 1L;
