@@ -13,6 +13,8 @@ import javax.persistence.Table;
 @Table(name="\"RG\".\"RessourceMarine\"")
 
 @NamedQuery(name="RessourceMarine.find", query="SELECT u FROM RessourceMarine u WHERE  u.id_classification_marine = :id_ClassifMarine")
+@NamedQuery(name="RMProposes.find", query="SELECT u FROM RessourceMarine u WHERE NOT u.validee = TRUE")
+
 
 public class RessourceMarine implements Serializable{
 
@@ -60,6 +62,9 @@ public class RessourceMarine implements Serializable{
 	
 	@Column
 	private String autres_noms;
+	
+	@Column
+	private Boolean validee;
 	
 	/*------------------------------------------*/
 	public RessourceMarine() {
@@ -174,6 +179,15 @@ public class RessourceMarine implements Serializable{
 	public void setAutres_noms(String autres_noms) {
 		this.autres_noms = autres_noms;
 	}
+
+	public Boolean getValidee() {
+		return validee;
+	}
+
+	public void setValidee(Boolean validee) {
+		this.validee = validee;
+	}
+	
 	
 	
 }
